@@ -27,3 +27,22 @@
 		</main>
 	</div>
 </template>
+
+<script setup>
+import { useHead } from 'nuxt/app'
+
+const pageTitle = 'Nike App'
+
+useHead({
+  title: pageTitle,
+})
+
+const iconPath = './assets/favicon.ico' // Replace with your icon path
+
+useHead({
+  link: [
+    { rel: 'icon', type: 'image/x-icon', href: iconPath },
+  ],
+})
+
+</script>
